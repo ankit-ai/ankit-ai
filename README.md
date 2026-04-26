@@ -51,6 +51,6 @@ Open to talks at conferences, workshops, podcasts, and university lectures on mu
 
 - **[Training Mixed-Domain Translation Models via Federated Learning](https://aclanthology.org/2022.naacl-main.186/)** (NAACL 2022). Shows that federated aggregation can fuse NMT engines trained on different domains and match centralized baselines. Introduces a bandwidth-aware parameter-selection technique to cut communication cost for large translation models.
 
-- **WDRASS: A Web-scale Dataset for Document Retrieval and Answer Sentence Selection** (CIKM 2022). Releases a web-scale dataset and benchmark that couples document retrieval with answer sentence selection in a single pipeline. Enables training and evaluation of end-to-end open-domain QA systems at realistic scale.
+- **[WDRASS: A Web-scale Dataset for Document Retrieval and Answer Sentence Selection](papers/wdrass-cikm-2022.pdf)** (CIKM 2022). Releases a web-scale dataset and benchmark that couples document retrieval with answer sentence selection in a single pipeline. Enables training and evaluation of end-to-end open-domain QA systems at realistic scale.
 
 - **[Communication-Efficient Federated Learning for Neural Machine Translation](https://assets.amazon.science/77/b5/8fc4062040378b5112c36b44d7e7/communication-efficient-federated-learning-for-neural-machine-translation.pdf)** (NeurIPS 2021 workshop). Adapts FL to NMT by identifying and exchanging only impactful parameters during aggregation. Reduces communication overhead while preserving translation quality across clients.
