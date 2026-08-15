@@ -1,6 +1,6 @@
 ### Hello, I am Ankit! 👋
 
-- 🔭 I’m an Applied Science Leader at Amazon working on **multimodal large language models** — post-training, alignment, and agentic retrieval for foundation models that reason across text, image, and structured data. My focus is turning frontier research on reasoning, grounding, and tool use into production systems that hold up at scale.
+- 🔭 I work in Applied Science at Amazon, building authoritative grounding and agentic RAG capabilities for **multimodal foundational models**.
 
 - 💬 My mission is to build AI systems that solve high-impact problems for people around the world and make everyday life easier.
 
