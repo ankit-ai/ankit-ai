@@ -2,7 +2,7 @@
 
 I lead Applied Science and Engineering teams at Amazon AGI, turning research in foundation models and agents into systems that work at web scale. My work spans post-training and alignment, multimodal and grounded retrieval, agent memory, and evaluation. A recurring question connects it: how can an AI system find reliable evidence, reason over it, and retain useful experience? Previously I led deep learning work at Salesforce and worked at Apple and Samsung.
 
-**Papers, with full abstracts and PDFs: [ankit-ai.github.io](https://ankit-ai.github.io/)**
+**Papers, with full abstracts and PDFs: [ankitrchadha.com](https://ankitrchadha.com/)**
 
 - I work in Applied Science at Amazon on grounded reasoning for AI agents,
   agent memory, and web-scale retrieval across text, images and structured data.
@@ -16,7 +16,7 @@ I lead Applied Science and Engineering teams at Amazon AGI, turning research in 
 
 ### What I work on
 
-- **Agent memory.** Introduced typed procedural knowledge graphs for reusable agent experience and append-only property graph memory for temporal conversational reasoning.
+- **Agent memory.** Introduced procedural knowledge graphs for reusable agent experience, append-only temporal conversational memory, and a benchmark for maintaining stored procedures when world knowledge changes.
 - **How agents delegate.** Introduced adaptive routing between typed dependency graphs and natural-language handoffs for multi-agent LLM systems.
 - **Web-scale question answering.** Built web-scale document retrieval, passage reranking, and answer sentence selection methods spanning thirty million documents and nine languages.
 - **Learning from data that cannot move.** Developed mixed-domain neural machine translation and communication-efficient federated learning without pooling data across domains.
@@ -29,25 +29,26 @@ I lead Applied Science and Engineering teams at Amazon AGI, turning research in 
 Peer reviewed, most recent first. Every link opens the paper's own page with the
 complete abstract, the key results, and the PDF.
 
-- **[Routed Graph Handoff: Adaptive Format Selection for Multi-Agent LLM Delegation](https://ankit-ai.github.io/papers/routed-graph-handoff/)**. EMNLP 2026, accepted, to appear. An extra classifier call picks per task whether one AI agent sends work to another as a dependency graph or as prose, gaining 12.7 points on τ-retail and preventing a 14.6-point loss on AppWorld.
-- **[APEX-MEM: Agentic Semi-Structured Memory with Temporal Reasoning for Long-Term Conversational AI](https://ankit-ai.github.io/papers/apex-mem-agentic-semi-structured-memory/)**. ACL 2026 (Main Conference, Long Papers). APEX-MEM uses an append-only property graph of temporally grounded, entity-centric events and a multi-tool retrieval agent to resolve evolving information at query time.
-- **[APEX-EM: Non-Parametric Online Learning for Autonomous Agents via Structured Procedural-Episodic Experience Replay](https://ankit-ai.github.io/papers/apex-em-procedural-episodic-experience-replay/)**. EMNLP 2026, accepted, to appear. APEX-EM introduced procedural knowledge graphs for LLM agent memory: its typed Procedural Knowledge Graph stores complete solution traces and retrieves them by meaning, operation structure, and graph traversal, with no model retraining.
-- **[Question-Context Alignment and Answer-Context Dependencies for Effective Answer Sentence Selection](https://ankit-ai.github.io/papers/question-context-alignment-answer-sentence-selection/)**. INTERSPEECH 2023. Instead of pasting neighboring sentences onto the question, this model matches question words to context words and builds a small sentence graph, raising top-1 answer accuracy on WikiQA from 68.09 to 74.16.
-- **[Controlled Text Generation with Hidden Representation Transformations](https://ankit-ai.github.io/papers/controlled-text-generation-hidden-representation-transformations/)**. Findings of ACL 2023. CHRT steers a language model away from toxic or negative text by editing its internal number vectors, cutting toxicity from 0.827 to 0.085 while adding only 0.01 seconds per generation.
-- **[Cross-Lingual Knowledge Distillation for Answer Sentence Selection in Low-Resource Languages](https://ankit-ai.github.io/papers/cross-lingual-knowledge-distillation-answer-sentence-selection/)**. Findings of ACL 2023. The paper trains answer-ranking models for languages with no labeled data by copying the soft scores of a strong English model, lifting Arabic accuracy on translated WikiQA from 64.2 to 76.3.
-- **[Efficient Fine-Tuning Large Language Models for Knowledge-Aware Response Planning](https://ankit-ai.github.io/papers/efficient-fine-tuning-knowledge-aware-response-planning/)**. ECML PKDD 2023 (Research Track), LNAI 14170. The paper fine-tunes a question-answering model twice, once with retrieved web text and once without, so it can fall back on what it already knows; end-to-end accuracy rises 7.40% over a ranking baseline.
-- **[WDRASS: A Web-scale Dataset for Document Retrieval and Answer Sentence Selection](https://ankit-ai.github.io/papers/wdrass-web-scale-document-retrieval-answer-sentence-selection/)**. CIKM 2022. WDRASS introduced a web-scale open-domain question answering dataset with 64,000 questions and 800,000+ labeled passages and sentences drawn from 30 million documents.
-- **[Training Mixed-Domain Translation Models via Federated Learning](https://ankit-ai.github.io/papers/federated-learning-mixed-domain-translation/)**. NAACL 2022 (Main Conference). Five domain-specific translation models use federated learning to build a mixed-domain neural machine translation system without pooling their data, with a method for selecting impactful parameters to control communication bandwidth.
-- **[Communication-Efficient Federated Learning for Neural Machine Translation](https://ankit-ai.github.io/papers/communication-efficient-federated-learning-nmt/)**. NeurIPS 2021 ENLSP Workshop. To train translation models across separate data owners, the authors share only a few small added "Controller" layers, cutting exchanged parameters about six times with average translation quality slightly above the matched baseline.
+- **[WK-Drift: Benchmarking Procedural Memory Maintenance under World Knowledge Drift](https://ankitrchadha.com/papers/wk-drift-procedural-memory-maintenance/)**. Findings of IJCNLP-AACL 2026. WK-Drift benchmarks how agents maintain stored procedures when the world changes; targeted graph updates raise post-drift clinical accuracy from 37.5% to 64.0% with known drift events.
+- **[APEX-EM: Non-Parametric Online Learning for Autonomous Agents via Structured Procedural-Episodic Experience Replay](https://ankitrchadha.com/papers/apex-em-procedural-episodic-experience-replay/)**. Findings of EMNLP 2026. APEX-EM introduced procedural knowledge graphs for LLM agent memory: its typed Procedural Knowledge Graph stores complete solution traces and retrieves them by meaning, operation structure, and graph traversal, with no model retraining.
+- **[Routed Graph Handoff: Adaptive Format Selection for Multi-Agent LLM Delegation](https://ankitrchadha.com/papers/routed-graph-handoff/)**. Findings of EMNLP 2026. An extra classifier call picks per task whether one AI agent sends work to another as a dependency graph or as prose, gaining 12.7 points on τ-retail and preventing a 14.6-point loss on AppWorld.
+- **[APEX-MEM: Agentic Semi-Structured Memory with Temporal Reasoning for Long-Term Conversational AI](https://ankitrchadha.com/papers/apex-mem-agentic-semi-structured-memory/)**. ACL 2026 (Main Conference, Long Papers). APEX-MEM uses an append-only property graph of temporally grounded, entity-centric events and a multi-tool retrieval agent to resolve evolving information at query time.
+- **[Efficient Fine-Tuning Large Language Models for Knowledge-Aware Response Planning](https://ankitrchadha.com/papers/efficient-fine-tuning-knowledge-aware-response-planning/)**. ECML PKDD 2023 (Research Track), LNAI 14170. The paper fine-tunes a question-answering model twice, once with retrieved web text and once without, so it can fall back on what it already knows; end-to-end accuracy rises 7.40% over a ranking baseline.
+- **[Question-Context Alignment and Answer-Context Dependencies for Effective Answer Sentence Selection](https://ankitrchadha.com/papers/question-context-alignment-answer-sentence-selection/)**. INTERSPEECH 2023. Instead of pasting neighboring sentences onto the question, this model matches question words to context words and builds a small sentence graph, raising top-1 answer accuracy on WikiQA from 68.09 to 74.16.
+- **[Controlled Text Generation with Hidden Representation Transformations](https://ankitrchadha.com/papers/controlled-text-generation-hidden-representation-transformations/)**. Findings of ACL 2023. CHRT steers a language model away from toxic or negative text by editing its internal number vectors, cutting toxicity from 0.827 to 0.085 while adding only 0.01 seconds per generation.
+- **[Cross-Lingual Knowledge Distillation for Answer Sentence Selection in Low-Resource Languages](https://ankitrchadha.com/papers/cross-lingual-knowledge-distillation-answer-sentence-selection/)**. Findings of ACL 2023. The paper trains answer-ranking models for languages with no labeled data by copying the soft scores of a strong English model, lifting Arabic accuracy on translated WikiQA from 64.2 to 76.3.
+- **[WDRASS: A Web-scale Dataset for Document Retrieval and Answer Sentence Selection](https://ankitrchadha.com/papers/wdrass-web-scale-document-retrieval-answer-sentence-selection/)**. CIKM 2022. WDRASS introduced a web-scale open-domain question answering dataset with 64,000 questions and 800,000+ labeled passages and sentences drawn from 30 million documents.
+- **[Training Mixed-Domain Translation Models via Federated Learning](https://ankitrchadha.com/papers/federated-learning-mixed-domain-translation/)**. NAACL 2022 (Main Conference). Five domain-specific translation models use federated learning to build a mixed-domain neural machine translation system without pooling their data, with a method for selecting impactful parameters to control communication bandwidth.
+- **[Communication-Efficient Federated Learning for Neural Machine Translation](https://ankitrchadha.com/papers/communication-efficient-federated-learning-nmt/)**. NeurIPS 2021 ENLSP Workshop. To train translation models across separate data owners, the authors share only a few small added "Controller" layers, cutting exchanged parameters about six times with average translation quality slightly above the matched baseline.
 
 Preprints.
 
-- **[ACM -- Attribute Conditioning for Abstractive Multi Document Summarization](https://ankit-ai.github.io/papers/attribute-conditioning-multi-document-summarization/)**. arXiv preprint. Adds a sentiment and polarity classifier to a news multi-document summarizer so it sticks to one viewpoint, raising the word-overlap ROUGE-1 score on MultiNews from 42.99 to 50.12 versus GraphSum.
-- **[Deep Reinforced Self-Attention Masks for Abstractive Summarization (DR.SAS)](https://ankit-ai.github.io/papers/dr-sas-deep-reinforced-self-attention-masks/)**. arXiv preprint. Adds a reinforcement-learning agent that decides which input words a summarizer should ignore, raising the word-overlap score ROUGE-1 on CNN/Daily Mail news from 40.79 to 41.89 against fine-tuned UniLM.
-- **[BERTQA -- Attention on Steroids](https://ankit-ai.github.io/papers/bertqa-attention-on-steroids/)**. arXiv preprint. Adds two extra attention layers to BERT so a question and its passage look at each other directly, which lifts SQuAD 2.0 dev F1 from 74.15 to 77.03 on the base model.
+- **[ACM -- Attribute Conditioning for Abstractive Multi Document Summarization](https://ankitrchadha.com/papers/attribute-conditioning-multi-document-summarization/)**. arXiv preprint. Adds a sentiment and polarity classifier to a news multi-document summarizer so it sticks to one viewpoint, raising the word-overlap ROUGE-1 score on MultiNews from 42.99 to 50.12 versus GraphSum.
+- **[Deep Reinforced Self-Attention Masks for Abstractive Summarization (DR.SAS)](https://ankitrchadha.com/papers/dr-sas-deep-reinforced-self-attention-masks/)**. arXiv preprint. Adds a reinforcement-learning agent that decides which input words a summarizer should ignore, raising the word-overlap score ROUGE-1 on CNN/Daily Mail news from 40.79 to 41.89 against fine-tuned UniLM.
+- **[BERTQA -- Attention on Steroids](https://ankitrchadha.com/papers/bertqa-attention-on-steroids/)**. arXiv preprint. Adds two extra attention layers to BERT so a question and its passage look at each other directly, which lifts SQuAD 2.0 dev F1 from 74.15 to 77.03 on the base model.
 
 Earlier undergraduate work in signal processing, image processing and
-steganography is listed on the [publications page](https://ankit-ai.github.io/publications/).
+steganography is listed on the [publications page](https://ankitrchadha.com/publications/).
 
 ---
 
@@ -61,8 +62,10 @@ steganography is listed on the [publications page](https://ankit-ai.github.io/pu
 ### Elsewhere
 
 - [Google Scholar](https://scholar.google.com/citations?user=hcslcm0AAAAJ&view_op=list_works&sortby=pubdate)
+- [ORCID](https://orcid.org/0000-0002-5029-0136)
 - [LinkedIn](https://www.linkedin.com/in/ankitrc/)
 - [ACL Anthology](https://aclanthology.org/people/ankit-chadha/)
+- [OpenAlex](https://openalex.org/A5027218595)
 - [Amazon Science](https://www.amazon.science/author/ankit-chadha)
 - [X](https://x.com/ankitrchadha)
 
